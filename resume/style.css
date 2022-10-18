@@ -1,0 +1,53 @@
+/* Assign to parents for changing direction */
+.row { display: flex; flex-direction: row; }
+.col { display: flex; flex-direction: column; }
+/* Assign to children of row/col to center */
+.row > .centered { align-self: center; margin: auto 0px; }
+.col > .centered { align-self: center; margin: 0px auto; }
+/* Assign to empty child dive to aesthetically fill space */
+.spacer { flex:1; }
+
+body {
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  background-color: black;
+}
+#paper {
+  background-color: white; 
+  width: 8.5in; 
+  height: 11in; 
+  margin: auto;
+}
+#paper > * {
+  margin: 16px;
+}
+
+h1,h2,h3,h4,p,cap,ul { margin: 0px; }
+
+cap {
+  color: #666666;
+  font-size: 12px;
+  font-style: italic;
+}
+h2 {
+  color: #2079C7;
+  font-size: 20px;
+  margin-top: 8px;
+}
+h3 {
+  font-size: 14px;
+  margin-top: 7px;
+}
+h3 > span { 
+  font-style: italic;
+}
+a {
+  color: #325BBA;
+}
+p, ul, li {
+  color: #434343;
+  font-size: 14px;
+  list-style-type:square;
+}
+br {
+  margin: 8px;
+}
