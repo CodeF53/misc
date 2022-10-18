@@ -9,13 +9,16 @@
 
 body {
   font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-  background-color: black;
+  background-color: whitesmoke;
+  padding: 1rem;
 }
 #paper {
   background-color: white; 
   width: 8.5in; 
   height: 11in; 
   margin: auto;
+  -webkit-box-shadow: 0px 0px 60px 20px gainsboro; 
+  box-shadow: 0px 0px 60px 20px gainsboro;
 }
 #paper > * {
   margin: 16px;
